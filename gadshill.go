@@ -4,13 +4,10 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"runtime"
 	"unicode"
 )
 
 func main() {
-	runtime.GOMAXPROCS(runtime.NumCPU())
-
 	scanner := bufio.NewScanner(os.Stdin)
 
 	for scanner.Scan() {
